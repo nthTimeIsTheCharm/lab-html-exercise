@@ -1,0 +1,22 @@
+
+.hero{
+    background-color: var(--discreet-background-color);
+}
+
+.hero__title {
+    padding: var(--spacing-m);
+    text-align: center;
+}
+
+.hero__text {
+    max-width: 70ch;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-CTA-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 0 var(--spacing-m);
+    padding-block: var(--spacing-l) calc(2*(var(--spacing-l)));
+}

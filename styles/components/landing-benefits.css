@@ -1,0 +1,49 @@
+.benefits__decorative-image {
+    inline-size: calc(8*var(--spacing-s));
+    margin: 0 auto;
+    padding-block-end: var(--spacing-l);
+}
+
+.benefits__title,
+.benefits__text {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 78ch;
+}
+
+.benefits__text {
+    padding-block-start: var(--spacing-s);
+    padding-block-end: var(--spacing-l);
+}
+
+.benefits__list {
+    padding-block-start: var(--spacing-xl);
+    padding-block-end: var(--spacing-l);
+    margin: 0 auto;
+    max-width: 60%;
+    min-width: 45ch;
+
+    @media screen and (min-width: 50em) {
+        & {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr;
+            gap: calc(2*var(--spacing-s));
+        }
+    }
+}
+
+.benefits__decorative-icon {
+    inline-size: var(--spacing-s);
+
+}
+
+
+
+.benefit__title {
+    padding-block-start: var(--spacing-xs);
+}
+
+.benefit__text {
+    padding-block: var(--spacing-s);
+}

@@ -1,0 +1,72 @@
+.header-bar {
+    box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+}
+
+
+/**At line level**/
+.header-line-one-wrapper,
+.header-line-two-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--spacing-s);
+    align-items: center;
+    padding-inline: var(--spacing-s);
+}
+
+.header-line-one-wrapper {
+    padding-block: var(--spacing-xs);
+}
+
+.header-line-two-wrapper {
+    padding-block: var(--spacing-xxs);
+
+}
+
+/**Inside each line**/
+.heart-and-motto,
+.primary-nav__links,
+.home-and-search,
+.access-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-xxs) var(--spacing-s);
+    font-size: var(--font-size-s);
+}
+
+/**
+    1st line
+    **/
+
+.header-bar__heart-icon {
+    flex: 0 0 var(--spacing-m);
+    inline-size: var(--spacing-m);
+    /*Why doesn't the flex basis value above do the job?*/
+    padding-inline-end: var(--spacing-xxs);
+}
+
+
+/**
+    2nd line
+    **/
+
+.home-and-search {
+    flex: 1 1 auto;
+}
+
+.primary-nav__home {
+    display: block;
+    flex: 0 0 var(--spacing-xl);
+    inline-size: var(--spacing-xl);
+    /*Why doesn't the flex basis value above do the job?*/
+}
+
+.primary-nav__search {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.primary-nav__search-field {
+    flex-grow: 1;
+}
