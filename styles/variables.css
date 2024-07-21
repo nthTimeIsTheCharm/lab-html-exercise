@@ -4,23 +4,48 @@
         --accent-color: #ec3a46;
         --neutral-background-color: #fff;
         --discreet-background-color: #f9f3f3;
-
-        /*Spacing*/
-        --spacing-xxs: 0.375rem;
-        --spacing-xs: 0.75rem;
-        --spacing-s: 1.125rem;
-        --spacing-m: 2rem;
-        --spacing-l: 2.5rem;
-        --spacing-xl: 3.25rem;
+        --yellow-highlight: rgba(255, 204, 53, .4); 
+        --light-grey: #f2f2f2;
 
         /*Fonts*/
         --body-font: 'Poppins';
+
         --font-s: 1rem;
         /*16px*/
-        --font-m: 1.125;
+
+        --font-m: 1.125rem;
         /*18px*/
-        --font-l: 2.25rem;
+
+        --font-l-mobile: 1.5rem;
+        /*24px*/
+        --font-l-desktop: 2.25rem;
         /*36px*/
-        --font-xl: 5rem;
+
+        --font-xl-mobile: 1.75rem;
+        /*28px*/
+        --font-xl-desktop: 5rem;
         /*80px*/
+
+        /*Spacing with rems*/
+        --spacing-xxs-rem: 0.375rem;
+        /*6px*/
+        --spacing-xs-rem: 0.75rem;
+        /*12px*/
+        --spacing-s-rem: 1.125rem;
+        /*18px*/
+        --spacing-m-rem: 2rem;
+        /*32px*/
+        --spacing-l-rem: 2.5rem;
+        /*40px*/
+        --spacing-xl-rem: 3.25rem;
+        /*52px*/
+
+        /*Spacing with ems*/
+        --spacing-xxs-em: 0.375em;
+        --spacing-xs-em: 0.75em;
+        --spacing-s-em: 1.125em;
+        --spacing-m-em: 2em;
+        --spacing-l-em: 2.5em;
+        --spacing-xl-em: 3.25em;
+
     }

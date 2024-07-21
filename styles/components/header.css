@@ -9,17 +9,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: var(--spacing-s);
+    gap: var(--spacing-s-em);
     align-items: center;
-    padding-inline: var(--spacing-s);
+    padding-inline: var(--spacing-s-em);
+    font-size: var(--font-s);
 }
 
 .header-line-one-wrapper {
-    padding-block: var(--spacing-xs);
+    padding-block: var(--spacing-xs-em);
 }
 
 .header-line-two-wrapper {
-    padding-block: var(--spacing-xxs);
+    padding-block: var(--spacing-xxs-em);
 
 }
 
@@ -31,8 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: var(--spacing-xxs) var(--spacing-s);
-    font-size: var(--font-size-s);
+    gap: var(--spacing-xxs-em) var(--spacing-s-em);
 }
 
 /**
@@ -40,10 +40,10 @@
     **/
 
 .header-bar__heart-icon {
-    flex: 0 0 var(--spacing-m);
-    inline-size: var(--spacing-m);
+    flex: 0 0 var(--spacing-m-em);
+    inline-size: var(--spacing-m-em);
     /*Why doesn't the flex basis value above do the job?*/
-    padding-inline-end: var(--spacing-xxs);
+    padding-inline-end: var(--spacing-xxs-em);
 }
 
 
@@ -57,8 +57,8 @@
 
 .primary-nav__home {
     display: block;
-    flex: 0 0 var(--spacing-xl);
-    inline-size: var(--spacing-xl);
+    flex: 0 0 var(--spacing-xl-em);
+    inline-size: var(--spacing-xl-em);
     /*Why doesn't the flex basis value above do the job?*/
 }
 
@@ -67,6 +67,25 @@
     flex: 1 1 auto;
 }
 
+.search-field-wrapper {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    background-color: var(--light-grey);
+}
+
+.search-field-icon-wrapper {
+    background-color: var(--light-grey);
+    padding-inline: var(--spacing-xxs-em);
+}
+
+.primary-nav__search-icon {
+    inline-size: var(--spacing-s-rem);
+    block-size: var(--spacing-s-rem);
+}
+
 .primary-nav__search-field {
+    all: unset;
     flex-grow: 1;
+    inline-size: 150px;
 }
