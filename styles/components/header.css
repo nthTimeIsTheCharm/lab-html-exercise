@@ -1,7 +1,7 @@
 .header-bar {
-    box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
-}
+    box-shadow: 0 8px 24px var(--light--grey--less--opacity);
 
+}
 
 /**At line level**/
 .header-line-one-wrapper,
@@ -20,11 +20,14 @@
 }
 
 .header-line-two-wrapper {
-    padding-block: var(--spacing-xxs-em);
+    padding-block: var(--spacing-xs-em);
 
+    @media screen and (min-width: 30em) {
+        padding-block: var(--spacing-xxs-em);
+    }
 }
 
-/**Inside each line**/
+/**Spaced groups inside each line**/
 .heart-and-motto,
 .primary-nav__links,
 .home-and-search,
@@ -53,6 +56,7 @@
 
 .home-and-search {
     flex: 1 1 auto;
+    /*Needed for the search field to grow*/
 }
 
 .primary-nav__home {
@@ -65,11 +69,13 @@
 .primary-nav__search {
     display: flex;
     flex: 1 1 auto;
+    /*Needed for the search field to grow*/
 }
 
 .search-field-wrapper {
     display: flex;
     flex: 1 1 auto;
+    /*Needed for the search field to grow*/
     align-items: center;
     background-color: var(--light-grey);
 }
@@ -80,12 +86,19 @@
 }
 
 .primary-nav__search-icon {
-    inline-size: var(--spacing-s-rem);
-    block-size: var(--spacing-s-rem);
+    display: none;
+
+    @media screen and (min-width: 30em) {
+        /*Magnifying glass shown only for tablet and up*/
+        display: block;
+        inline-size: var(--spacing-s-rem);
+        block-size: var(--spacing-s-rem);
+    }
 }
 
 .primary-nav__search-field {
     all: unset;
     flex-grow: 1;
-    inline-size: 150px;
+    inline-size: 9.375rem;
+    /*150px - Needed for the search field to not be too wide on small mobile screens.*/
 }
